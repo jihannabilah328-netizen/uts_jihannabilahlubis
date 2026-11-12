@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header>
+      <h1>Royal Dashboard</h1>
+      <input type="search" id="cari" placeholder="Cari Kelas, Dokumen, Aktifitas dll..." aria-label="Cari">
+    </header>
+
+    <nav id="menu" aria-label="Menu utama">
+      <a href="#home" data-page="home" class="active">Home</a>
+      <a href="#mahasiswa" data-page="mahasiswa">Mahasiswa</a>
+      <a href="#kelas" data-page="kelas">Kelas</a>
+      <a href="#aktivitas" data-page="aktivitas">Aktifitas</a>
+      <a href="#statistik" data-page="statistik">Statistik</a>
+      <a href="#dokumen" data-page="dokumen">Dokumen</a>
+      <a href="#settings" data-page="settings">Settings</a>
+      <a href="#signout" data-page="signout" class="signout">Sign Out</a>
+    </nav>
+
+    <main id="home">
+      <div class="welcome-text">
+        <h2 id="salam">Selamat Datang, Nama Mahasiswa</h2>
+        <h2 id="kelasMhs">Kelas SI-3X</h2>
+        <p>Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+      </div>
+      <!-- FOTO PROFIL: taruh fotomu di img/foto.jpg -->
+      <img id="foto" src="fotokuu.jpeg" alt="Foto profil">
+    </main>
+
+    <aside id="statistik" class="card">
+      <h3>Statistik Mahasiswa</h3>
+      <!-- GAMBAR GRAFIK: taruh gambarnya di img/grafik.png -->
+      <img id="grafik" src="chart_statistik.svg" alt="Grafik Statistik Mahasiswa">
+    </aside>
+
+    <section id="progres" class="card">
+      <h3>Progres Kelas</h3>
+      <div class="item"><strong>Matakuliah A</strong><span>78 Pendaftar</span></div>
+      <div class="item"><strong>Matakuliah B</strong><span>30 Pendaftar</span></div>
+      <div class="item"><strong>Matakuliah C</strong><span>40 Pendaftar</span></div>
+      <div class="item"><strong>Matakuliah D</strong><span>10 Pendaftar</span></div>
+    </section>
+
+    <section id="aktivitas" class="card">
+      <h3>Aktifitas Selanjutnya</h3>
+      <div class="item"><strong>Perkuliahan Daring 1</strong><span>Senin, 15 Januari 2025</span></div>
+      <div class="item"><strong>Perkuliahan Daring 1</strong><span>Selasa, 15 Februari 2025</span></div>
+      <div class="item"><strong>Perkuliahan Daring 1</strong><span>Rabu, 15 Maret 2025</span></div>
+      <div class="item"><strong>Perkuliahan Daring 1</strong><span>Kamis, 15 April 2025</span></div>
+    </section>
+
+    <footer id="dokumen" class="card">
+      <h3>Lampiran</h3>
+      <div class="item doc"><span><strong>Lampiran Dokumen 1</strong> - Matakuliah A | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+      <div class="item doc"><span><strong>Lampiran Dokumen 2</strong> - Matakuliah B | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+      <div class="item doc"><span><strong>Lampiran Dokumen 3</strong> - Matakuliah C | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
